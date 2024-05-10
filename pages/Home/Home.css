@@ -16,6 +16,10 @@ nav h1{
     font-size: 45px;
 }
 
+nav:hover{
+    cursor: pointer;
+}
+
 nav h1{
     color: #fff;
 }
@@ -24,18 +28,75 @@ nav span{
     color: #FFCA41;
 }
 
-.center{
+.button{
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 20px;
+
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.translucent{
+    background-color: #ffc94185;
+    border: #FFCA41  solid 1px;
+    transition: 0.7s;
+}
+
+.translucent:hover{
+    background-color: #FFCA41;
+}
+
+.yellow{
+    background-color: #FFCA41;
+    border: none;
+    transition: 0.5s;
+}
+
+.yellow:hover{
+    box-shadow: #115095 -3px 3px 0px;
+}
+
+.transparent{
+    background-color: transparent;
+    border: none;
+}
+
+.presentation-container{
     display: flex;
 }
 
+.center{
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
 main img{
-    width: 650px;
+    height: 35vw;
+    margin: 0 80px 0 0;
+}
+
+main h1{
+    color: #0A2252;
+    font-size: 4vw;
+    margin: 0;
+}
+
+main p{
+    margin: 15px 0 25px 0;
+    font-size: 20px;
+    width: 100%;
 }
 
 section{
     background-color: #115095;
     display: flex;
     justify-content: space-around;
+    padding: 20px 0;
 }
 
 .profile{
@@ -59,10 +120,16 @@ section{
 }
 
 .photo{
-    width: 20vw;
-    height: 20vw;
+    width: 19vw;
+    height: 19vw;
     border-radius: 100%;
     background-size: cover;
+    transition: 0.5s;
+}
+
+.photo:hover{
+    box-shadow: #FFCA41 0px 0px 10px 5px;
+    cursor: pointer;
 }
 
 .profile1{
