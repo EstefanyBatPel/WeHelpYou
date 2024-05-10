@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav{
+    background-color: #115095;
+    display: flex;
+}
+
+main{
+    display: flex;
+}
+
+main img{
+    width: 350px;
+}
+
+section{
+    background-color: #115095;
+    display: flex;
+}
+
+.profile{
+    display: grid;
+    place-items: center;
+    margin: 10px;
+}
+
+.name{
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+.profesion{
+    margin: 0;
+    text-align: center;
+}
+
+.photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-size: cover;
+}
+
+.profile1{
+    background-image: url(../../img/Profile_1.png);
+}
+
+.profile2{
+    background-image: url(../../img/Profile_2.png);
+}
+
+.profile3{
+    background-image: url(../../img/Profile_3.png);
+}
+
+.profile4{
+    background-image: url(../../img/Profile_4.png);
+}
