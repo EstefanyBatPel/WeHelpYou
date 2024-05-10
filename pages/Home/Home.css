@@ -6,19 +6,36 @@ body{
 nav{
     background-color: #115095;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-main{
+nav h1{
+    margin: 0;
+    font-size: 45px;
+}
+
+nav h1{
+    color: #fff;
+}
+
+nav span{
+    color: #FFCA41;
+}
+
+.center{
     display: flex;
 }
 
 main img{
-    width: 350px;
+    width: 650px;
 }
 
 section{
     background-color: #115095;
     display: flex;
+    justify-content: space-around;
 }
 
 .profile{
@@ -32,17 +49,19 @@ section{
     font-weight: bold;
     margin: 10px;
     text-align: center;
+    font-size: 1.5vw;
 }
 
 .profesion{
     margin: 0;
     text-align: center;
+    font-size: 1.5vw;
 }
 
 .photo{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
     background-size: cover;
 }
 
@@ -60,4 +79,8 @@ section{
 
 .profile4{
     background-image: url(../../img/Profile_4.png);
+}
+
+.profile img{
+    width: 5vw;
 }
