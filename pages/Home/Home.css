@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 nav{
@@ -9,6 +9,10 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+}
+
+nav a{
+    text-decoration: none;
 }
 
 nav h1{
@@ -75,9 +79,47 @@ nav span{
     width: 100%;
 }
 
-main img{
-    height: 35vw;
-    margin: 0 80px 0 0;
+.presentationPhoto{
+    width: 40vw;
+    height: 40vw;
+}
+
+.bigPhoto{
+    width: 40vw;
+    height: 40vw;
+    position: relative;
+}
+
+.centerPhoto{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    background-size: cover;
+    transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circleYellow{
+    background-color: #FFCA41;
+    top: 54.5%;
+    left: 54.5%;
+    z-index: -1;
+}
+
+.circleDarkBlue{
+    background-color: #0A2252;
+    top: 45.5%;
+    z-index: -2;
+}
+
+.circleBlue{
+    background-color: #115095;
+    top: 55%;
+    left: 45.5%;
+    z-index: -3;
 }
 
 main h1{
@@ -120,8 +162,8 @@ section{
 }
 
 .photo{
-    width: 19vw;
-    height: 19vw;
+    width: 350px;
+    height: 350px;
     border-radius: 100%;
     background-size: cover;
     transition: 0.5s;
@@ -150,4 +192,22 @@ section{
 
 .profile img{
     width: 5vw;
+}
+
+@media(max-width: 1000px){
+    .photo{
+        width: 38vw;
+        height: 38vw;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+    }
+
+    nav h1{
+        font-size: 20px;
+    }
 }
